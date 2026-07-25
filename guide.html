@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Samford HQ — Owner's Guide</title>
+<style>
+:root{--bg:#0b141d;--panel:#101d2a;--line:rgba(240,240,235,.09);--paper:#f2f0ea;--mute:#8a97a3;--cyan:#3ec6da;--gold:#c9a86a;
+--serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+--sans:-apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--paper);font-family:var(--sans);line-height:1.65;padding:40px 20px 80px}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-family:var(--serif);font-weight:400;font-size:34px;margin:8px 0 6px}
+h2{font-family:var(--serif);font-weight:400;font-size:23px;color:var(--gold);margin:44px 0 12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+p,li{font-size:15px;color:#cfd6db}
+.kicker{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0}
+.card b{color:var(--paper)}
+ol,ul{padding-left:22px;margin:10px 0}
+li{margin:7px 0}
+a{color:var(--cyan);text-decoration:none;font-weight:600}
+code{background:#16283a;border-radius:6px;padding:2px 7px;font-size:13px;color:var(--cyan)}
+.warn{border-left:3px solid #e2694f;padding-left:16px;color:#e8b0a2;font-size:14px;margin:14px 0}
+.ok{border-left:3px solid var(--gold);padding-left:16px;font-size:14px;margin:14px 0}
+.big{font-size:16px;color:var(--paper)}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--mute);white-space:nowrap;width:170px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Samford Properties · The Boat House</div>
+  <h1>Owner's Guide — running the websites yourself</h1>
+  <p>Everything runs itself. You never install anything, never edit code, and never call a developer.
+  Every change follows the same two moves: <b class="big">1) edit in HQ&nbsp;&nbsp;2) drag one file onto the publish page.</b>
+  The websites rebuild themselves about two minutes later.</p>
+
+  <h2>Your bookmarks (save all four)</h2>
+  <table>
+    <tr><td>The Boat House site</td><td><a href="https://cghargon-wq.github.io/theboathouse/">cghargon-wq.github.io/theboathouse</a> — what storage customers see</td></tr>
+    <tr><td>Samford Properties site</td><td><a href="https://cghargon-wq.github.io/samfordproperties/">cghargon-wq.github.io/samfordproperties</a> — what rental customers see</td></tr>
+    <tr><td>HQ (your dashboard)</td><td><a href="https://cghargon-wq.github.io/samford-hq/">cghargon-wq.github.io/samford-hq</a> — sign in with your email + password</td></tr>
+    <tr><td>The publish page</td><td><a href="https://github.com/cghargon-wq/samford-properties/upload/main/intake">github.com/…/upload/main/intake</a> — where dragged files go live</td></tr>
+  </table>
+  <div class="ok">HQ works from any computer or phone. Your login unlocks the data — without it, the page is
+  unreadable code. Check “keep me signed in” on your own computer and you won't be asked again.</div>
+
+  <h2>One-time setup (15 minutes, ever)</h2>
+  <ol>
+    <li>Make a free account at <a href="https://github.com">github.com</a> — this is the “publish key” to the websites.</li>
+    <li>Tell Geron your username. He adds you as a collaborator; accept the email invitation that follows.</li>
+    <li>Get your HQ email + password from Geron. Sign in at the HQ link above.</li>
+  </ol>
+
+  <h2>Change wording, phone numbers, or “Available now” homes</h2>
+  <ol>
+    <li>In HQ, open the <b>Website</b> tab. Type your changes — headlines, phone, hours, home descriptions,
+        the gold “Available now” badge for each rental home.</li>
+    <li>Click <b>⬆ Publish website changes</b>. A small file lands in your Downloads and the publish page opens.</li>
+    <li>Drag the file from Downloads onto the publish page, then press the green <b>Commit changes</b> button.</li>
+  </ol>
+  <div class="ok">That's it. Give it two minutes, then refresh the public site and see your words live.</div>
+
+  <h2>Mark stalls rented / vacant, change rents, tenant details</h2>
+  <ol>
+    <li>In HQ, click any stall on the map (or any home). Toggle rented/vacant, fix a rent, update a phone number —
+        revenue numbers recalculate as you click.</li>
+    <li>When you're done for the day, press <b>⬆ Publish changes</b> (bottom bar).</li>
+    <li>Same move: drag the downloaded file onto the publish page → green <b>Commit changes</b> button.</li>
+  </ol>
+  <p>Publishing updates the live availability map customers see AND makes your edits appear in HQ on every
+  other computer, not just yours.</p>
+
+  <h2>Quarterly: new Space Master workbook</h2>
+  <ol>
+    <li>When Stacey's updated Excel arrives, make sure the filename still contains
+        <code>Space Master</code> (it always does).</li>
+    <li>Drag the .xlsx straight onto the publish page → green <b>Commit changes</b> button.</li>
+  </ol>
+  <p>The system reads the workbook, refreshes every stall, rate, and tenant, and republishes all three sites
+  by itself. <b>A new workbook wins over old clicks:</b> stall toggles you published earlier are replaced by
+  what the workbook says, so re-do any toggle the workbook doesn't know about yet.</p>
+
+  <h2>Monthly: expenses for the ledger</h2>
+  <p>Export or type expenses into a CSV/Excel file using the template's column names
+  (Date, Property, Category, Description, Amount) and drag it onto the publish page <b>after opening the
+  <code>expenses</code> folder there</b> (or just ask HQ's Ledger tab to ingest it in-browser for a quick look).</p>
+
+  <h2>If something looks wrong</h2>
+  <ul>
+    <li><b>My change isn't showing.</b> Wait two full minutes, then hard-refresh (hold Shift and click reload).
+        On a phone, close and reopen the browser tab.</li>
+    <li><b>The publish page says “commit failed” or looks scary.</b> Just reload it and drag the file again —
+        nothing breaks from retrying.</li>
+    <li><b>I forgot my HQ password.</b> There is no reset link on purpose (that's the security).
+        Geron can issue a new one.</li>
+    <li><b>I dragged the wrong file.</b> Harmless — the system ignores files it doesn't recognize.</li>
+  </ul>
+
+  <div class="warn"><b>Two rules that protect you:</b> never type customer card numbers anywhere in this system
+  (payments stay with the card processor — this is the law of the platform), and never delete files on the
+  GitHub pages — everything you need is drag-and-drop only.</div>
+
+  <h2>What happens under the hood (for the curious)</h2>
+  <p>Your dragged file lands in a private folder called <code>intake</code>. A robot (GitHub Actions) notices,
+  rebuilds all three websites from the master ledgers, and publishes them. The tenant ledger itself is never
+  public: the public sites show only stall numbers, sizes, rates, and open/full status, and HQ ships fully
+  encrypted — your password is the only key.</p>
+</div>
+</body>
+</html>
